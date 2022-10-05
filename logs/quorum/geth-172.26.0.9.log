@@ -1,0 +1,85 @@
+INFO [10-05|06:32:12.318] Starting pprof server                    addr=http://0.0.0.0:9545/debug/pprof
+INFO [10-05|06:32:12.323] Tessera API version: 5.0 
+INFO [10-05|06:32:12.323] Target Private Tx Manager                name=Tessera distributionVersion=22.1.7
+INFO [10-05|06:32:12.324] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [10-05|06:32:12.324] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [10-05|06:32:12.325] Found deprecated node list file /data/static-nodes.json, please use the TOML config file instead. 
+INFO [10-05|06:32:12.325] Enabling recording of key preimages since archive mode is used 
+INFO [10-05|06:32:12.325] Set global gas cap                       cap=25000000
+INFO [10-05|06:32:12.325] Connecting to private tx manager using HTTP 
+INFO [10-05|06:32:12.329] Tessera API version: 5.0 
+INFO [10-05|06:32:12.329] Target Private Tx Manager                name=Tessera distributionVersion=22.1.7
+WARN [10-05|06:32:12.330] Sanitizing invalid miner gas price       provided=0 updated=0
+INFO [10-05|06:32:12.330] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [10-05|06:32:12.397] Opened ancient database                  database=/data/geth/chaindata/ancient readonly=false
+INFO [10-05|06:32:12.397] Initialised chain configuration          config="{ChainID: 1337 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 IsQuorum: true Constantinople: 0 TransactionSizeLimit: 64 MaxCodeSize: 0 Petersburg: <nil> Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil> YOLO v3: <nil> PrivacyEnhancements: <nil> PrivacyPrecompile: <nil> EnableGasPriceBlock: <nil> Engine: unknown}"
+INFO [10-05|06:32:12.397] Initialising Ethereum protocol           network=1337 dbversion=<nil>
+INFO [10-05|06:32:12.397] Initialising Quorum consensus protocol   name=istanbul versions="[100 99 64]" network=1337 dbversion=<nil>
+WARN [10-05|06:32:12.397] Upgrade blockchain database version      from=<nil> to=8
+INFO [10-05|06:32:12.397] Using SegregatedCacheProvider. 
+INFO [10-05|06:32:12.397] Loaded most recent local header          number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+INFO [10-05|06:32:12.398] Loaded most recent local full block      number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+INFO [10-05|06:32:12.398] Loaded most recent local fast block      number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+WARN [10-05|06:32:12.398] Failed to load snapshot, regenerating    err="missing or corrupted snapshot"
+INFO [10-05|06:32:12.398] Rebuilding state snapshot 
+INFO [10-05|06:32:12.398] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [10-05|06:32:12.398] Wiper running, state snapshotting paused accounts=0 slots=0 storage=0.00B elapsed="132.18µs"
+INFO [10-05|06:32:12.398] Deleted state snapshot leftovers         kind=accounts wiped=0 elapsed="27.012µs"
+INFO [10-05|06:32:12.398] Deleted state snapshot leftovers         kind=storage  wiped=0 elapsed="11.789µs"
+INFO [10-05|06:32:12.398] Compacting snapshot account area  
+WARN [10-05|06:32:12.424] Error reading unclean shutdown markers   error="leveldb: not found"
+INFO [10-05|06:32:12.424] No plugins to initialise 
+INFO [10-05|06:32:12.424] Starting peer-to-peer node               instance=Geth/node4-qbft/v1.10.2-stable-e5b930e8(quorum-v22.7.0)/linux-amd64/go1.16.15
+INFO [10-05|06:32:12.472] Compacting snapshot storage area  
+INFO [10-05|06:32:12.474] IPC endpoint opened                      url=/data/geth.ipc isMultitenant=false
+INFO [10-05|06:32:12.474] HTTP server started                      endpoint=[::]:8545    prefix= cors=* vhosts=* isTls=false
+INFO [10-05|06:32:12.474] Security: TLS not enabled                endpoint=0.0.0.0:8546 reason="no TLSConfigurationSource found"
+INFO [10-05|06:32:12.474] WebSocket enabled                        url=ws://[::]:8546
+WARN [10-05|06:32:12.478] full p2p peer                            id=6aac1fe7e5de302ff0bf880e90cc2f9298b0da38f90fc67f82e14b701cce7497 ethPeer="Peer 6aac1fe7e5de302f 172.26.0.2:30303"
+WARN [10-05|06:32:12.478] full p2p peer                            id=e78ae2a931854e2a8094ccb637c67d666b28165d6307f5445e95b7f444f5d237 ethPeer="Peer e78ae2a931854e2a 172.26.0.3:30303"
+INFO [10-05|06:32:12.498] Compacted snapshot area in database      elapsed=100.271ms
+INFO [10-05|06:32:12.498] Resuming state snapshot generation       root="5833f2…29dde1" accounts=0 slots=0 storage=0.00B elapsed="9.348µs"
+INFO [10-05|06:32:12.498] Generated state snapshot                 accounts=4 slots=0 storage=200.00B elapsed="156.171µs"
+INFO [10-05|06:32:12.828] Transaction pool price threshold not updated as gasPrice is not enabled 
+INFO [10-05|06:32:12.829] QBFT: start                              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
+INFO [10-05|06:32:12.829] QBFT: initialize new round               address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 old.round=-1 old.seq=0 target.round=0 lastProposal.number=0 lastProposal.hash="7c1bf4…5de4c5"
+INFO [10-05|06:32:12.829] QBFT: start new round                    address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 old.round=-1 old.seq=0 next.round=0 next.seq=1 next.proposer=0x37C67d666B28165d6307F5445E95b7f444f5d237 next.valSet="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" next.size=4 next.IsProposer=false
+INFO [10-05|06:32:12.829] Commit new mining work                   number=1 sealhash="dc5d81…3c6b9a" uncles=0 txs=0 gas=0 fees=0 elapsed="99.03µs"
+INFO [10-05|06:32:12.829] QBFT: handle block proposal request      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state="Accept request"
+WARN [10-05|06:32:13.238] full p2p peer                            id=c5ce1b7360900359e7252cf7a23f59698a77216b81c5a64e92f5be920eb0178b ethPeer="Peer c5ce1b7360900359 172.26.0.4:55002"
+INFO [10-05|06:32:47.476] Looking for peers                        peercount=3 tried=3 static=4
+INFO [10-05|06:33:07.594] QBFT: accepted PRE-PREPARE message       address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
+INFO [10-05|06:33:07.595] QBFT: handle PREPARE message             address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 prepares.count=0 quorum=3
+INFO [10-05|06:33:07.596] QBFT: handle PREPARE message             address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 prepares.count=1 quorum=3
+INFO [10-05|06:33:07.597] QBFT: changed state                      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 old.state=Preprepared      new.state=Prepared
+INFO [10-05|06:33:07.597] QBFT: broadcast COMMIT message           address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 payload=0xf8abf8660180a03288edf06f74b65f687d20be82c9afead08281a042c71526f21f9c35d8eccf65b8412a4ecf04495b7548e31000c4b6867d62322c8efa1c107899294839c14a7a38703d073613453938794558733eb8c793ee07e469e3777563437a758a78f848668400b84149eeae5c3ace8b3daadbc155140310cb358de98940eda919188c43cb2aee3fcb6223e0338d25e3a5a5c3c770c2f2ff88cfd08fc5d06c3fc897298ee034cba77800
+INFO [10-05|06:33:07.599] QBFT: handle COMMIT message              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=1 commits.count=0 quorum=3
+INFO [10-05|06:33:07.599] QBFT: handle COMMIT message              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 commits.count=1 quorum=3
+INFO [10-05|06:33:07.600] QBFT: handle COMMIT message              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 commits.count=2 quorum=3
+INFO [10-05|06:33:07.600] QBFT: received quorum of COMMIT messages address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 commits.count=3 quorum=3
+INFO [10-05|06:33:07.600] QBFT: changed state                      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 old.state=Prepared         new.state=Committed
+INFO [10-05|06:33:07.602] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed="668.924µs" mgasps=0.000 number=1 hash="3288ed…eccf65" dirty=0.00B
+INFO [10-05|06:33:07.602] QBFT: handle final committed             address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Committed
+INFO [10-05|06:33:07.602] QBFT: initialize new round               address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 target.round=0 lastProposal.number=1 lastProposal.hash="3288ed…eccf65"
+INFO [10-05|06:33:07.602] QBFT: changed state                      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=2 old.state=Committed        new.state="Accept request"
+INFO [10-05|06:33:07.602] QBFT: handle block proposal request      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=2 state="Accept request"
+INFO [10-05|06:33:31.354] Got interrupt, shutting down... 
+INFO [10-05|06:33:31.356] HTTP server stopped                      endpoint=[::]:8545
+INFO [10-05|06:33:31.358] IPC endpoint closed                      url=/data/geth.ipc
+INFO [10-05|06:33:31.358] Stopping all plugins                     count=0
+INFO [10-05|06:33:31.359] All plugins stopped                      errors=[]
+INFO [10-05|06:33:31.359] extension service: stopping 
+INFO [10-05|06:33:31.359] extension service: stopped 
+INFO [10-05|06:33:31.359] Ethereum protocol stopped 
+INFO [10-05|06:33:31.359] Transaction pool stopped 
+INFO [10-05|06:33:31.359] BFT: deactivate 
+INFO [10-05|06:33:31.359] QBFT: stopping...                        address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
+INFO [10-05|06:33:31.359] Looking for peers                        peercount=2 tried=0 static=4
+INFO [10-05|06:33:31.360] Writing cached state to disk             block=1 hash="3288ed…eccf65" root="5833f2…29dde1"
+INFO [10-05|06:33:31.360] Persisted trie from memory database      nodes=0 size=0.00B time="11.849µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-05|06:33:31.360] Writing snapshot state to disk           root="5833f2…29dde1"
+INFO [10-05|06:33:31.360] Persisted trie from memory database      nodes=0 size=0.00B time="4.131µs"  gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-05|06:33:31.360] Writing clean trie cache to disk         path=/data/geth/triecache threads=24
+INFO [10-05|06:33:31.359] QBFT: stopped                            address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
+INFO [10-05|06:33:31.364] Persisted the clean trie cache           path=/data/geth/triecache elapsed=4.195ms
+INFO [10-05|06:33:31.364] Blockchain stopped 

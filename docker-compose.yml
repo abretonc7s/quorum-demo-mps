@@ -1,0 +1,151 @@
+---
+version: "3.6"
+
+x-quorum-def:
+  &quorum-def
+  restart: "on-failure"
+  build:
+    context: config/goQuorum
+    args:
+      QUORUM_VERSION: ${QUORUM_VERSION:-latest} 
+  expose:
+    - 30303
+    - 8545
+    - 9545
+  healthcheck:
+    test: ["CMD", "curl --fail http://localhost:8545 || exit 1"]
+    interval: 3s
+    timeout: 3s
+    retries: 10
+    start_period: 5s
+
+x-tessera-def:
+  &tessera-def
+  build:
+    context: config/tessera
+    args:
+      TESSERA_VERSION: ${TESSERA_VERSION:-latest}
+  environment:
+    TESSERA_MODE: tessera
+  expose:
+    - 9000
+    - 9080
+    - 9101
+  restart: "no"
+  # healthcheck:
+  #   test: ["CMD", "curl http://localhost:9000/upcheck || exit 1  "]
+  #   interval: 3s
+  #   timeout: 3s
+  #   retries: 20
+  #   start_period: 5s
+
+ 
+services:
+  node1:
+    << : *quorum-def
+    container_name: node1
+    hostname: node1
+    ports:
+      - 20000:8545/tcp
+      - 20001:8546/tcp
+      - 30303
+      - 9545
+    environment:
+      - GOQUORUM_CONS_ALGO=${GOQUORUM_CONS_ALGO}
+      - GOQUORUM_GENESIS_MODE=standard
+      - QUORUM_PTM=tm1
+    volumes:
+      - ./config/nodes/node1:/config/keys
+      - ./logs/quorum:/var/log/quorum/
+      - ./config/permissions:/permissions
+      - ./live:/live
+  node2:
+    << : *quorum-def
+    container_name: node2
+    hostname: node2
+    ports:
+      - 20002:8545/tcp
+      - 20003:8546/tcp
+      - 30303
+      - 9545
+    environment:
+      - GOQUORUM_CONS_ALGO=${GOQUORUM_CONS_ALGO}
+      - GOQUORUM_GENESIS_MODE=standard
+      - QUORUM_PTM=tm2
+    volumes:
+      - ./config/nodes/node2:/config/keys
+      - ./logs/quorum:/var/log/quorum/
+      - ./config/permissions:/permissions
+      - ./live:/live
+  node3:
+    << : *quorum-def
+    container_name: node3
+    hostname: node3
+    ports:
+      - 20004:8545/tcp
+      - 20005:8546/tcp
+      - 30303
+      - 9545
+    environment:
+      - GOQUORUM_CONS_ALGO=${GOQUORUM_CONS_ALGO}
+      - GOQUORUM_GENESIS_MODE=standard
+      - QUORUM_PTM=tm3
+    volumes:
+      - ./config/nodes/node3:/config/keys
+      - ./logs/quorum:/var/log/quorum/
+      - ./config/permissions:/permissions
+      - ./live:/live
+  node4:
+    << : *quorum-def
+    container_name: node4
+    hostname: node4
+    ports:
+      - 20006:8545/tcp
+      - 20007:8546/tcp
+      - 30303
+      - 9545
+    environment:
+      - GOQUORUM_CONS_ALGO=${GOQUORUM_CONS_ALGO}
+      - GOQUORUM_GENESIS_MODE=standard
+      - QUORUM_PTM=tm3
+    volumes:
+      - ./config/nodes/node4:/config/keys
+      - ./logs/quorum:/var/log/quorum/
+      - ./config/permissions:/permissions
+      - ./live:/live
+  tm1:
+    << : *tessera-def
+    container_name: tm1
+    hostname: tm1
+    ports:
+      - 9081:9080
+    volumes:
+      - ./keys:/config/keys
+      - ./logs/tessera:/var/log/tessera/
+  tm2:
+    << : *tessera-def
+    container_name: tm2
+    hostname: tm2
+    ports:
+      - 9082:9080
+    volumes:
+      - ./keys:/config/keys
+      - ./logs/tessera:/var/log/tessera/
+  tm3:
+    << : *tessera-def
+    container_name: tm3
+    hostname: tm3
+    ports:
+      - 9083:9080
+    volumes:
+      - ./keys:/config/keys
+      - ./logs/tessera:/var/log/tessera/
+  tm4:
+    << : *tessera-def
+    container_name: tm4
+    hostname: tm4
+    ports:
+      - 9084:9080
+    volumes:
+      - ./keys:/config/keys
+      - ./logs/tessera:/var/log/tessera/

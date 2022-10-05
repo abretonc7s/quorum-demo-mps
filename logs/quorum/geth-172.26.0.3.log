@@ -1,0 +1,65 @@
+INFO [10-05|06:36:51.164] Starting pprof server                    addr=http://0.0.0.0:9545/debug/pprof
+INFO [10-05|06:36:51.164] Connecting to private tx manager using HTTP 
+INFO [10-05|06:36:51.177] Tessera API version: 5.0 
+INFO [10-05|06:36:51.177] Target Private Tx Manager                name=Tessera distributionVersion=22.1.7
+INFO [10-05|06:36:51.178] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [10-05|06:36:51.178] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [10-05|06:36:51.179] Enabling recording of key preimages since archive mode is used 
+INFO [10-05|06:36:51.179] Connecting to private tx manager using HTTP 
+INFO [10-05|06:36:51.184] Tessera API version: 5.0 
+INFO [10-05|06:36:51.184] Target Private Tx Manager                name=Tessera distributionVersion=22.1.7
+WARN [10-05|06:36:51.184] Sanitizing invalid miner gas price       provided=0 updated=0
+INFO [10-05|06:36:51.184] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [10-05|06:36:51.184] Allocated cache and file handles         database=/data/geth/chaindata cache=768.00MiB handles=524288
+INFO [10-05|06:36:51.251] Opened ancient database                  database=/data/geth/chaindata/ancient readonly=false
+INFO [10-05|06:36:51.251] Initialised chain configuration          config="{ChainID: 1337 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 IsQuorum: true Constantinople: 0 TransactionSizeLimit: 64 MaxCodeSize: 0 Petersburg: <nil> Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil> YOLO v3: <nil> PrivacyEnhancements: <nil> PrivacyPrecompile: <nil> EnableGasPriceBlock: <nil> Engine: unknown}"
+INFO [10-05|06:36:51.252] Initialising Ethereum protocol           network=1337 dbversion=<nil>
+INFO [10-05|06:36:51.252] Initialising Quorum consensus protocol   name=istanbul versions="[100 99 64]" network=1337 dbversion=<nil>
+WARN [10-05|06:36:51.252] Upgrade blockchain database version      from=<nil> to=8
+INFO [10-05|06:36:51.252] Using SegregatedCacheProvider. 
+INFO [10-05|06:36:51.252] Loaded most recent local header          number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+INFO [10-05|06:36:51.252] Loaded most recent local full block      number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+INFO [10-05|06:36:51.252] Loaded most recent local fast block      number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+WARN [10-05|06:36:51.252] Failed to load snapshot, regenerating    err="missing or corrupted snapshot"
+INFO [10-05|06:36:51.252] Rebuilding state snapshot 
+WARN [10-05|06:36:51.277] Error reading unclean shutdown markers   error="leveldb: not found"
+WARN [10-05|06:36:51.277] permission-config.json file is missing. Smart-contract-based permission service will be disabled error="stat /data/permission-config.json: no such file or directory"
+INFO [10-05|06:36:51.277] extension service registered 
+INFO [10-05|06:36:51.331] Compacting snapshot storage area  
+INFO [10-05|06:36:51.339] IPC endpoint opened                      url=/data/node1-geth.ipc isMultitenant=false
+INFO [10-05|06:36:51.339] Security: TLS not enabled                endpoint=0.0.0.0:8545 reason="no TLSConfigurationSource found"
+INFO [10-05|06:36:51.339] Security: TLS not enabled                endpoint=0.0.0.0:8546 reason="no TLSConfigurationSource found"
+WARN [10-05|06:36:51.340] full p2p peer                            id=c5ce1b7360900359e7252cf7a23f59698a77216b81c5a64e92f5be920eb0178b ethPeer="Peer c5ce1b7360900359 172.26.0.4:30303"
+WARN [10-05|06:36:51.341] full p2p peer                            id=6aac1fe7e5de302ff0bf880e90cc2f9298b0da38f90fc67f82e14b701cce7497 ethPeer="Peer 6aac1fe7e5de302f 172.26.0.8:30303"
+INFO [10-05|06:36:51.379] Compacted snapshot area in database      elapsed=126.621ms
+INFO [10-05|06:36:51.379] Resuming state snapshot generation       root="5833f2…29dde1" accounts=0 slots=0 storage=0.00B elapsed="8.144µs"
+INFO [10-05|06:36:51.379] Generated state snapshot                 accounts=4 slots=0 storage=200.00B elapsed="263.109µs"
+WARN [10-05|06:36:51.522] full p2p peer                            id=30afa3a9d2ccf8e8a8da3dbbd8c7ab6f715c1085460a1dfac2c030ca34ab7319 ethPeer="Peer 30afa3a9d2ccf8e8 172.26.0.5:33150"
+INFO [10-05|06:36:51.723] Unlocked account                         address=0x339A6E3a8D47882c5be9B0e901360649600d1868
+WARN [10-05|06:36:51.723] permission-config.json file is missing. Smart-contract-based permission service will be disabled error="stat /data/permission-config.json: no such file or directory"
+INFO [10-05|06:36:51.723] Transaction pool price threshold not updated as gasPrice is not enabled 
+INFO [10-05|06:36:51.723] Transaction pool price threshold not updated as gasPrice is not enabled 
+INFO [10-05|06:36:51.723] BFT: activate QBFT 
+INFO [10-05|06:36:51.723] QBFT: start                              address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-05|06:36:51.723] QBFT: initialize new round               address=0x37C67d666B28165d6307F5445E95b7f444f5d237 old.round=-1 old.seq=0 target.round=0 lastProposal.number=0 lastProposal.hash="7c1bf4…5de4c5"
+INFO [10-05|06:36:51.723] QBFT: start new round                    address=0x37C67d666B28165d6307F5445E95b7f444f5d237 old.round=-1 old.seq=0 next.round=0 next.seq=1 next.proposer=0x37C67d666B28165d6307F5445E95b7f444f5d237 next.valSet="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" next.size=4 next.IsProposer=true
+INFO [10-05|06:36:51.723] Commit new mining work                   number=1 sealhash="f7d331…488e3c" uncles=0 txs=0 gas=0 fees=0 elapsed="87.433µs"
+INFO [10-05|06:36:51.723] QBFT: handle block proposal request      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state="Accept request"
+INFO [10-05|06:37:25.988] Looking for peers                        peercount=2 tried=3 static=4
+INFO [10-05|06:37:25.991] HTTP server stopped                      endpoint=[::]:8545
+INFO [10-05|06:37:25.993] HTTP server stopped                      endpoint=[::]:8546
+INFO [10-05|06:37:25.993] IPC endpoint closed                      url=/data/node1-geth.ipc
+INFO [10-05|06:37:25.993] Stopping all plugins                     count=0
+INFO [10-05|06:37:25.993] All plugins stopped                      errors=[]
+INFO [10-05|06:37:25.993] extension service: stopping 
+INFO [10-05|06:37:25.993] extension service: stopped 
+INFO [10-05|06:37:25.993] Ethereum protocol stopped 
+INFO [10-05|06:37:25.993] Transaction pool stopped 
+INFO [10-05|06:37:25.994] BFT: deactivate 
+INFO [10-05|06:37:25.994] QBFT: stopping...                        address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-05|06:37:25.994] QBFT: stopped                            address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-05|06:37:25.994] Writing snapshot state to disk           root="5833f2…29dde1"
+INFO [10-05|06:37:25.994] Persisted trie from memory database      nodes=0 size=0.00B time="16.613µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-05|06:37:25.994] Writing clean trie cache to disk         path=/data/geth/triecache threads=24
+INFO [10-05|06:37:25.998] Persisted the clean trie cache           path=/data/geth/triecache elapsed=4.096ms
+INFO [10-05|06:37:25.999] Blockchain stopped 
