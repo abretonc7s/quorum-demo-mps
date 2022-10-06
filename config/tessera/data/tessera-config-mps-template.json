@@ -1,0 +1,102 @@
+{
+    "mode": "${TESSERA_MODE}",
+    "useWhiteList": false,
+    "jdbc": {
+        "username": "sa",
+        "password": "",
+        "url": "jdbc:h2:./data/tm/db;MODE=Oracle;TRACE_LEVEL_SYSTEM_OUT=0",
+        "autoCreateTables": true
+    },
+    "serverConfigs": [
+        {
+            "app": "ThirdParty",
+            "enabled": true,
+            "serverAddress": "http://${HOSTNAME}:9080",
+            "communicationType": "REST"
+        },
+        {
+            "app": "Q2T",
+            "enabled": true,
+            "serverAddress": "http://${HOSTNAME}:9101",
+            "sslConfig": {
+                "tls": "OFF"
+            },
+            "communicationType": "REST"
+        },
+        {
+            "app": "P2P",
+            "enabled": true,
+            "serverAddress": "http://${HOSTNAME}:9000",
+            "sslConfig": {
+                "tls": "OFF"
+            },
+            "communicationType": "REST"
+        }
+    ],
+    "peer": [
+        {
+            "url": "http://tm1:9000"
+        },
+        {
+            "url": "http://tm2:9000"
+        },
+        {
+            "url": "http://tm3:9000"
+        },
+        {
+            "url": "http://tm4:9000"
+        }
+    ],
+    "residentGroups": [
+        {
+            "name": "PSA",
+            "description": "Tenant A [a_k1]",
+            "members": [
+                "mbW7Y2t3Hblq/xxo4ZnC8tfMIUiTgdjuGvTL2L8EHGA="
+            ]
+        },
+        {
+            "name": "PSB",
+            "description": "Tenant B [b_k1, b_k2]",
+            "members": [
+                "SRw9AGCJ7OV3y8AhPH6EPRp+ltAuxXMCBPcH4wNbBnE=",
+                "7SsHdJWcBLp4N65EtxpWsWuom/JrF3LcCOjL7DJ22XE="
+            ]
+        },
+        {
+            "name": "PSC",
+            "description": "Tenant C [c_k1]",
+            "members": [
+                "NyshKkK44YOJF92OI5udcHR9FXmaGglkL1JrPQF8Bjk="
+            ]
+        }
+    ],
+    "keys": {
+        "passwords": [],
+        "keyData": [
+            {
+                "privateKeyPath": "/config/keys/a_k1.key",
+                "publicKeyPath": "/config/keys/a_k1.pub"
+            },
+            {
+                "privateKeyPath": "/config/keys/b_k1.key",
+                "publicKeyPath": "/config/keys/b_k1.pub"
+            },
+            {
+                "privateKeyPath": "/config/keys/b_k2.key",
+                "publicKeyPath": "/config/keys/b_k2.pub"
+            },
+            {
+                "privateKeyPath": "/config/keys/c_k1.key",
+                "publicKeyPath": "/config/keys/c_k1.pub"
+            }
+        ]
+    },
+    "alwaysSendTo": [],
+    "bootstrapNode": false,
+    "features": {
+        "enableRemoteKeyValidation": false,
+        "enablePrivacyEnhancements": false,
+        "enableMultiplePrivateStates": true
+    }
+}

@@ -119,6 +119,8 @@ services:
     hostname: tm1
     ports:
       - 9081:9080
+    environment:
+      - MPS=false
     volumes:
       - ./keys:/config/keys
       - ./logs/tessera:/var/log/tessera/
@@ -128,6 +130,8 @@ services:
     hostname: tm2
     ports:
       - 9082:9080
+    environment:
+      - MPS=false
     volumes:
       - ./keys:/config/keys
       - ./logs/tessera:/var/log/tessera/
@@ -137,6 +141,8 @@ services:
     hostname: tm3
     ports:
       - 9083:9080
+    environment:
+      - MPS=false
     volumes:
       - ./keys:/config/keys
       - ./logs/tessera:/var/log/tessera/
@@ -146,6 +152,16 @@ services:
     hostname: tm4
     ports:
       - 9084:9080
+    environment:
+      - MPS=false
     volumes:
       - ./keys:/config/keys
       - ./logs/tessera:/var/log/tessera/
+  explorer:
+    container_name: explorer
+    image: consensys/quorum-explorer:latest
+    volumes:
+    - ./config/explorer/config-explorer.json:/app/config.json
+    - ./config/explorer/.env:/app/.env.production
+    ports:
+    - 26000:25000/tcp

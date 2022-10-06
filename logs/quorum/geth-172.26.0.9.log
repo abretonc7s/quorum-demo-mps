@@ -1,85 +1,183 @@
-INFO [10-05|06:32:12.318] Starting pprof server                    addr=http://0.0.0.0:9545/debug/pprof
-INFO [10-05|06:32:12.323] Tessera API version: 5.0 
-INFO [10-05|06:32:12.323] Target Private Tx Manager                name=Tessera distributionVersion=22.1.7
-INFO [10-05|06:32:12.324] Maximum peer count                       ETH=50 LES=0 total=50
-INFO [10-05|06:32:12.324] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
-WARN [10-05|06:32:12.325] Found deprecated node list file /data/static-nodes.json, please use the TOML config file instead. 
-INFO [10-05|06:32:12.325] Enabling recording of key preimages since archive mode is used 
-INFO [10-05|06:32:12.325] Set global gas cap                       cap=25000000
-INFO [10-05|06:32:12.325] Connecting to private tx manager using HTTP 
-INFO [10-05|06:32:12.329] Tessera API version: 5.0 
-INFO [10-05|06:32:12.329] Target Private Tx Manager                name=Tessera distributionVersion=22.1.7
-WARN [10-05|06:32:12.330] Sanitizing invalid miner gas price       provided=0 updated=0
-INFO [10-05|06:32:12.330] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
-INFO [10-05|06:32:12.397] Opened ancient database                  database=/data/geth/chaindata/ancient readonly=false
-INFO [10-05|06:32:12.397] Initialised chain configuration          config="{ChainID: 1337 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 IsQuorum: true Constantinople: 0 TransactionSizeLimit: 64 MaxCodeSize: 0 Petersburg: <nil> Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil> YOLO v3: <nil> PrivacyEnhancements: <nil> PrivacyPrecompile: <nil> EnableGasPriceBlock: <nil> Engine: unknown}"
-INFO [10-05|06:32:12.397] Initialising Ethereum protocol           network=1337 dbversion=<nil>
-INFO [10-05|06:32:12.397] Initialising Quorum consensus protocol   name=istanbul versions="[100 99 64]" network=1337 dbversion=<nil>
-WARN [10-05|06:32:12.397] Upgrade blockchain database version      from=<nil> to=8
-INFO [10-05|06:32:12.397] Using SegregatedCacheProvider. 
-INFO [10-05|06:32:12.397] Loaded most recent local header          number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
-INFO [10-05|06:32:12.398] Loaded most recent local full block      number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
-INFO [10-05|06:32:12.398] Loaded most recent local fast block      number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
-WARN [10-05|06:32:12.398] Failed to load snapshot, regenerating    err="missing or corrupted snapshot"
-INFO [10-05|06:32:12.398] Rebuilding state snapshot 
-INFO [10-05|06:32:12.398] Regenerated local transaction journal    transactions=0 accounts=0
-INFO [10-05|06:32:12.398] Wiper running, state snapshotting paused accounts=0 slots=0 storage=0.00B elapsed="132.18µs"
-INFO [10-05|06:32:12.398] Deleted state snapshot leftovers         kind=accounts wiped=0 elapsed="27.012µs"
-INFO [10-05|06:32:12.398] Deleted state snapshot leftovers         kind=storage  wiped=0 elapsed="11.789µs"
-INFO [10-05|06:32:12.398] Compacting snapshot account area  
-WARN [10-05|06:32:12.424] Error reading unclean shutdown markers   error="leveldb: not found"
-INFO [10-05|06:32:12.424] No plugins to initialise 
-INFO [10-05|06:32:12.424] Starting peer-to-peer node               instance=Geth/node4-qbft/v1.10.2-stable-e5b930e8(quorum-v22.7.0)/linux-amd64/go1.16.15
-INFO [10-05|06:32:12.472] Compacting snapshot storage area  
-INFO [10-05|06:32:12.474] IPC endpoint opened                      url=/data/geth.ipc isMultitenant=false
-INFO [10-05|06:32:12.474] HTTP server started                      endpoint=[::]:8545    prefix= cors=* vhosts=* isTls=false
-INFO [10-05|06:32:12.474] Security: TLS not enabled                endpoint=0.0.0.0:8546 reason="no TLSConfigurationSource found"
-INFO [10-05|06:32:12.474] WebSocket enabled                        url=ws://[::]:8546
-WARN [10-05|06:32:12.478] full p2p peer                            id=6aac1fe7e5de302ff0bf880e90cc2f9298b0da38f90fc67f82e14b701cce7497 ethPeer="Peer 6aac1fe7e5de302f 172.26.0.2:30303"
-WARN [10-05|06:32:12.478] full p2p peer                            id=e78ae2a931854e2a8094ccb637c67d666b28165d6307f5445e95b7f444f5d237 ethPeer="Peer e78ae2a931854e2a 172.26.0.3:30303"
-INFO [10-05|06:32:12.498] Compacted snapshot area in database      elapsed=100.271ms
-INFO [10-05|06:32:12.498] Resuming state snapshot generation       root="5833f2…29dde1" accounts=0 slots=0 storage=0.00B elapsed="9.348µs"
-INFO [10-05|06:32:12.498] Generated state snapshot                 accounts=4 slots=0 storage=200.00B elapsed="156.171µs"
-INFO [10-05|06:32:12.828] Transaction pool price threshold not updated as gasPrice is not enabled 
-INFO [10-05|06:32:12.829] QBFT: start                              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
-INFO [10-05|06:32:12.829] QBFT: initialize new round               address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 old.round=-1 old.seq=0 target.round=0 lastProposal.number=0 lastProposal.hash="7c1bf4…5de4c5"
-INFO [10-05|06:32:12.829] QBFT: start new round                    address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 old.round=-1 old.seq=0 next.round=0 next.seq=1 next.proposer=0x37C67d666B28165d6307F5445E95b7f444f5d237 next.valSet="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" next.size=4 next.IsProposer=false
-INFO [10-05|06:32:12.829] Commit new mining work                   number=1 sealhash="dc5d81…3c6b9a" uncles=0 txs=0 gas=0 fees=0 elapsed="99.03µs"
-INFO [10-05|06:32:12.829] QBFT: handle block proposal request      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state="Accept request"
-WARN [10-05|06:32:13.238] full p2p peer                            id=c5ce1b7360900359e7252cf7a23f59698a77216b81c5a64e92f5be920eb0178b ethPeer="Peer c5ce1b7360900359 172.26.0.4:55002"
-INFO [10-05|06:32:47.476] Looking for peers                        peercount=3 tried=3 static=4
-INFO [10-05|06:33:07.594] QBFT: accepted PRE-PREPARE message       address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
-INFO [10-05|06:33:07.595] QBFT: handle PREPARE message             address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 prepares.count=0 quorum=3
-INFO [10-05|06:33:07.596] QBFT: handle PREPARE message             address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 prepares.count=1 quorum=3
-INFO [10-05|06:33:07.597] QBFT: changed state                      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 old.state=Preprepared      new.state=Prepared
-INFO [10-05|06:33:07.597] QBFT: broadcast COMMIT message           address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 payload=0xf8abf8660180a03288edf06f74b65f687d20be82c9afead08281a042c71526f21f9c35d8eccf65b8412a4ecf04495b7548e31000c4b6867d62322c8efa1c107899294839c14a7a38703d073613453938794558733eb8c793ee07e469e3777563437a758a78f848668400b84149eeae5c3ace8b3daadbc155140310cb358de98940eda919188c43cb2aee3fcb6223e0338d25e3a5a5c3c770c2f2ff88cfd08fc5d06c3fc897298ee034cba77800
-INFO [10-05|06:33:07.599] QBFT: handle COMMIT message              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=1 commits.count=0 quorum=3
-INFO [10-05|06:33:07.599] QBFT: handle COMMIT message              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 commits.count=1 quorum=3
-INFO [10-05|06:33:07.600] QBFT: handle COMMIT message              address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 commits.count=2 quorum=3
-INFO [10-05|06:33:07.600] QBFT: received quorum of COMMIT messages address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 commits.count=3 quorum=3
-INFO [10-05|06:33:07.600] QBFT: changed state                      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 old.state=Prepared         new.state=Committed
-INFO [10-05|06:33:07.602] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed="668.924µs" mgasps=0.000 number=1 hash="3288ed…eccf65" dirty=0.00B
-INFO [10-05|06:33:07.602] QBFT: handle final committed             address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 state=Committed
-INFO [10-05|06:33:07.602] QBFT: initialize new round               address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=1 target.round=0 lastProposal.number=1 lastProposal.hash="3288ed…eccf65"
-INFO [10-05|06:33:07.602] QBFT: changed state                      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=2 old.state=Committed        new.state="Accept request"
-INFO [10-05|06:33:07.602] QBFT: handle block proposal request      address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 current.round=0 current.sequence=2 state="Accept request"
-INFO [10-05|06:33:31.354] Got interrupt, shutting down... 
-INFO [10-05|06:33:31.356] HTTP server stopped                      endpoint=[::]:8545
-INFO [10-05|06:33:31.358] IPC endpoint closed                      url=/data/geth.ipc
-INFO [10-05|06:33:31.358] Stopping all plugins                     count=0
-INFO [10-05|06:33:31.359] All plugins stopped                      errors=[]
-INFO [10-05|06:33:31.359] extension service: stopping 
-INFO [10-05|06:33:31.359] extension service: stopped 
-INFO [10-05|06:33:31.359] Ethereum protocol stopped 
-INFO [10-05|06:33:31.359] Transaction pool stopped 
-INFO [10-05|06:33:31.359] BFT: deactivate 
-INFO [10-05|06:33:31.359] QBFT: stopping...                        address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
-INFO [10-05|06:33:31.359] Looking for peers                        peercount=2 tried=0 static=4
-INFO [10-05|06:33:31.360] Writing cached state to disk             block=1 hash="3288ed…eccf65" root="5833f2…29dde1"
-INFO [10-05|06:33:31.360] Persisted trie from memory database      nodes=0 size=0.00B time="11.849µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-INFO [10-05|06:33:31.360] Writing snapshot state to disk           root="5833f2…29dde1"
-INFO [10-05|06:33:31.360] Persisted trie from memory database      nodes=0 size=0.00B time="4.131µs"  gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-INFO [10-05|06:33:31.360] Writing clean trie cache to disk         path=/data/geth/triecache threads=24
-INFO [10-05|06:33:31.359] QBFT: stopped                            address=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319
-INFO [10-05|06:33:31.364] Persisted the clean trie cache           path=/data/geth/triecache elapsed=4.195ms
-INFO [10-05|06:33:31.364] Blockchain stopped 
+INFO [10-06|06:35:27.605] Starting pprof server                    addr=http://0.0.0.0:9545/debug/pprof
+INFO [10-06|06:35:27.616] Tessera API version: 5.0 
+INFO [10-06|06:35:27.617] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [10-06|06:35:27.617] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [10-06|06:35:27.617] Found deprecated node list file /data/static-nodes.json, please use the TOML config file instead. 
+INFO [10-06|06:35:27.621] Tessera API version: 5.0 
+INFO [10-06|06:35:27.692] Opened ancient database                  database=/data/geth/chaindata/ancient readonly=false
+INFO [10-06|06:35:27.693] Initialised chain configuration          config="{ChainID: 1337 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 IsQuorum: true Constantinople: 0 TransactionSizeLimit: 64 MaxCodeSize: 0 Petersburg: <nil> Istanbul: <nil>, Muir Glacier: <nil>, Berlin: <nil> YOLO v3: <nil> PrivacyEnhancements: <nil> PrivacyPrecompile: <nil> EnableGasPriceBlock: <nil> Engine: unknown}"
+INFO [10-06|06:35:27.695] Initialising Ethereum protocol           network=1337 dbversion=<nil>
+INFO [10-06|06:35:27.695] Initialising Quorum consensus protocol   name=istanbul versions="[100 99 64]" network=1337 dbversion=<nil>
+WARN [10-06|06:35:27.695] Upgrade blockchain database version      from=<nil> to=8
+INFO [10-06|06:35:27.695] Using SegregatedCacheProvider. 
+INFO [10-06|06:35:27.697] Loaded most recent local header          number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+INFO [10-06|06:35:27.697] Loaded most recent local full block      number=0 hash="7c1bf4…5de4c5" td=1 age=5y6mo3w
+WARN [10-06|06:35:27.697] Failed to load snapshot, regenerating    err="missing or corrupted snapshot"
+INFO [10-06|06:35:27.697] Rebuilding state snapshot 
+INFO [10-06|06:35:27.698] Deleted state snapshot leftovers         kind=storage  wiped=0 elapsed="30.932µs"
+WARN [10-06|06:35:27.709] Error reading unclean shutdown markers   error="leveldb: not found"
+WARN [10-06|06:35:27.709] permission-config.json file is missing. Smart-contract-based permission service will be disabled error="stat /data/permission-config.json: no such file or directory"
+INFO [10-06|06:35:27.709] extension service registered 
+INFO [10-06|06:35:27.710] No plugins to initialise 
+INFO [10-06|06:35:27.710] Starting peer-to-peer node               instance=Geth/node1/v1.10.2-stable-e5b930e8(quorum-v22.7.0)/linux-amd64/go1.16.15
+INFO [10-06|06:35:27.761] New local node record                    seq=1 id=e78ae2a931854e2a ip=127.0.0.1 udp=0 tcp=30303
+INFO [10-06|06:35:27.761] Started P2P networking                   self="enode://80665b6f31796b2ef333c66a7cefdc0910aaaedac8b71cbb58a0246d58d7696e032a665770f9edd0ee04b531aba0669f92c4505c6d0022394dace95dc6c342ad@127.0.0.1:30303?discport=0"
+INFO [10-06|06:35:27.763] IPC endpoint opened                      url=/live/node1-geth.ipc isMultitenant=false
+INFO [10-06|06:35:27.765] Security: TLS not enabled                endpoint=0.0.0.0:8545 reason="no TLSConfigurationSource found"
+INFO [10-06|06:35:27.765] HTTP server started                      endpoint=[::]:8545    prefix= cors=* vhosts=* isTls=false
+INFO [10-06|06:35:27.765] WebSocket enabled                        url=ws://[::]:8546
+WARN [10-06|06:35:27.782] full p2p peer                            id=30afa3a9d2ccf8e8a8da3dbbd8c7ab6f715c1085460a1dfac2c030ca34ab7319 ethPeer="Peer 30afa3a9d2ccf8e8 172.26.0.2:30303"
+WARN [10-06|06:35:27.784] full p2p peer                            id=6aac1fe7e5de302ff0bf880e90cc2f9298b0da38f90fc67f82e14b701cce7497 ethPeer="Peer 6aac1fe7e5de302f 172.26.0.3:30303"
+INFO [10-06|06:35:27.812] Compacted snapshot area in database      elapsed=113.234ms
+INFO [10-06|06:35:27.812] Resuming state snapshot generation       root="5833f2…29dde1" accounts=0 slots=0 storage=0.00B elapsed="6.504µs"
+INFO [10-06|06:35:27.812] Generated state snapshot                 accounts=4 slots=0 storage=200.00B elapsed="299.222µs"
+INFO [10-06|06:35:28.145] Unlocked account                         address=0x339A6E3a8D47882c5be9B0e901360649600d1868
+WARN [10-06|06:35:28.145] permission-config.json file is missing. Smart-contract-based permission service will be disabled error="stat /data/permission-config.json: no such file or directory"
+INFO [10-06|06:35:28.145] Transaction pool price threshold not updated as gasPrice is not enabled 
+INFO [10-06|06:35:28.145] Transaction pool price threshold not updated as gasPrice is not enabled 
+INFO [10-06|06:35:28.145] QBFT: initialize new round               address=0x37C67d666B28165d6307F5445E95b7f444f5d237 old.round=-1 old.seq=0 target.round=0 lastProposal.number=0 lastProposal.hash="7c1bf4…5de4c5"
+WARN [10-06|06:35:28.460] full p2p peer                            id=c5ce1b7360900359e7252cf7a23f59698a77216b81c5a64e92f5be920eb0178b ethPeer="Peer c5ce1b7360900359 172.26.0.6:39530"
+INFO [10-06|06:36:02.760] Looking for peers                        peercount=3 tried=3 static=4
+WARN [10-06|06:36:13.154] WARNING: The attribute config.maxCodeSizeConfig is deprecated and will be removed in the future, please use config.transitions.contractsizelimit on genesis file 
+INFO [10-06|06:36:13.155] QBFT: handle block proposal request      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state="Accept request"
+INFO [10-06|06:36:13.157] QBFT: handle PRE-PREPARE message         address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:36:13.157] QBFT: broadcast PREPARE message          address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 payload=0xf867e30180a0beaca91db9a6db701854d1d0dab62e994a155c32af0bee62d5083684463693f1b8416437caa79f075ace29bd18c5687ec1a9c76cf2e9eb3decb6411ee66798f35218189fed8d89aa8a2109696d4003e8516ed5249ba548f469d319bc14e40259c81201
+INFO [10-06|06:36:13.158] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 prepares.count=0 quorum=3
+INFO [10-06|06:36:13.160] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=1 prepares.count=1 quorum=3
+INFO [10-06|06:36:13.161] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 prepares.count=2 quorum=3
+INFO [10-06|06:36:13.161] QBFT: received quorum of PREPARE messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 prepares.count=3 quorum=3
+INFO [10-06|06:36:13.161] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 old.state=Preprepared      new.state=Prepared
+INFO [10-06|06:36:13.162] QBFT: broadcast COMMIT message           address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 payload=0xf8abf8660180a0beaca91db9a6db701854d1d0dab62e994a155c32af0bee62d5083684463693f1b8411acacc1090f6c4b3f20b1383cb8433aa5f04336f63272942a4be1bfb06278e436e1d7ac2144ea0c9d4986aa236dd043d71b0effac96211363f90c8af3d211e8e00b841cc5800539bc6cb4cd70ed291e6a2812dc9b01d4f28113d6a2ebd0c66a06bf4f960d544e5de0cd6a26fee3fcbb6e88521c621cde4e0a2788c0eb89a9e28b75b7b01
+INFO [10-06|06:36:13.165] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=1 commits.count=1 quorum=3
+INFO [10-06|06:36:13.166] QBFT: received quorum of COMMIT messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=1 commits.count=3 quorum=3
+INFO [10-06|06:36:13.166] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 old.state=Prepared         new.state=Committed
+INFO [10-06|06:36:13.166] BFT: block proposal committed            author=0x37C67d666B28165d6307F5445E95b7f444f5d237 hash="beaca9…3693f1" number=1
+INFO [10-06|06:36:13.167] Successfully sealed new block            number=1 sealhash="beaca9…3693f1" hash="beaca9…3693f1" elapsed=12.372ms
+INFO [10-06|06:36:13.167] QBFT: handle final committed             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=1 state=Committed
+INFO [10-06|06:37:13.001] QBFT: handle PRE-PREPARE message         address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:37:13.001] QBFT: accepted PRE-PREPARE message       address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:37:13.001] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 old.state="Accept request" new.state=Preprepared
+INFO [10-06|06:37:13.001] QBFT: broadcast PREPARE message          address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=2 payload=0xf867e30280a008f658e4adae692272df6632584ec6b3f659d7e58e5f2718931c02f100b84871b841813edc2b3cb9fc636757e1635438dce76d668217760677683e6a7eb02ad7b86a441f2b42823e9bde983881b5d84da076d91d15b0d771174b694dea7ca49a804401
+INFO [10-06|06:37:13.001] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Preprepared      msg.code=19 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=2 prepares.count=0 quorum=3
+INFO [10-06|06:37:13.001] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Preprepared      msg.code=19 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=2 prepares.count=1 quorum=3
+INFO [10-06|06:37:13.002] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=2 commits.count=0 quorum=3
+INFO [10-06|06:37:13.002] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Prepared         msg.code=20 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=2 commits.count=1 quorum=3
+INFO [10-06|06:37:13.002] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Prepared         msg.code=20 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=2 commits.count=2 quorum=3
+INFO [10-06|06:37:13.002] QBFT: received quorum of COMMIT messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Prepared         msg.code=20 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=2 commits.count=3 quorum=3
+INFO [10-06|06:37:13.002] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 old.state=Prepared         new.state=Committed
+INFO [10-06|06:37:13.002] BFT: block proposal committed            author=0x37C67d666B28165d6307F5445E95b7f444f5d237 hash="08f658…b84871" number=2
+INFO [10-06|06:37:13.003] QBFT: handle final committed             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 state=Committed
+INFO [10-06|06:37:13.003] QBFT: initialize new round               address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=2 target.round=0 lastProposal.number=2 lastProposal.hash="08f658…b84871"
+INFO [10-06|06:38:08.006] QBFT: handle PRE-PREPARE message         address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:38:08.007] QBFT: accepted PRE-PREPARE message       address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:38:08.007] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 old.state="Accept request" new.state=Preprepared
+INFO [10-06|06:38:08.007] QBFT: broadcast PREPARE message          address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=3 payload=0xf867e30380a0a1b2027e3616e698ee403d876a92a685d01960a628615cb254f2a6e15193bec2b84164d6dc38cb40db0b6fb92905a0b439c9b95b21efaa2655168d4286e4db543641509211548320e9e392ab707650fbc2005701aebc240b63e79409ca67bae9a1b700
+INFO [10-06|06:38:08.008] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Preprepared      msg.code=19 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=3 prepares.count=0 quorum=3
+INFO [10-06|06:38:08.009] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=3 prepares.count=1 quorum=3
+INFO [10-06|06:38:08.010] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Preprepared      msg.code=19 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=3 prepares.count=2 quorum=3
+INFO [10-06|06:38:08.010] QBFT: received quorum of PREPARE messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Preprepared      msg.code=19 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=3 prepares.count=3 quorum=3
+INFO [10-06|06:38:08.011] QBFT: broadcast COMMIT message           address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=3 payload=0xf8abf8660380a0a1b2027e3616e698ee403d876a92a685d01960a628615cb254f2a6e15193bec2b841f09fe278ab4da8c25f0707dc44bfcdcd04edac4253e054946f85953c6309f9f92fd6f9aa1b3b8e2b7273f16139e284992785a8e9c08d7fc37414a0d28371308c00b841bec2acd36de299d6839137178d8bbc6ee35b81fa3e518382c19519b98459dc1964da79248fb40b0b94522808e844b8e89acd3f0e70d1f9f7897660a1a590faf601
+INFO [10-06|06:38:08.012] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Prepared         msg.code=20 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=3 commits.count=0 quorum=3
+INFO [10-06|06:38:08.013] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Prepared         msg.code=20 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=3 commits.count=2 quorum=3
+INFO [10-06|06:38:08.013] QBFT: received quorum of COMMIT messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Prepared         msg.code=20 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=3 commits.count=3 quorum=3
+INFO [10-06|06:38:08.013] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 old.state=Prepared         new.state=Committed
+INFO [10-06|06:38:08.013] BFT: block proposal committed            author=0x37C67d666B28165d6307F5445E95b7f444f5d237 hash="a1b202…93bec2" number=3
+INFO [10-06|06:38:08.014] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed="375.063µs" mgasps=0.000 number=3 hash="a1b202…93bec2" dirty=1.60KiB
+INFO [10-06|06:38:08.014] QBFT: handle final committed             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 state=Committed
+INFO [10-06|06:38:08.014] QBFT: initialize new round               address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=3 target.round=0 lastProposal.number=3 lastProposal.hash="a1b202…93bec2"
+INFO [10-06|06:38:08.014] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 old.state=Committed        new.state="Accept request"
+INFO [10-06|06:38:08.014] QBFT: start new round                    address=0x37C67d666B28165d6307F5445E95b7f444f5d237 old.round=0  old.sequence=3 old.state=Committed        old.proposer=0xa23f59698a77216B81C5a64e92F5bE920eB0178b next.round=0 next.seq=4 next.proposer=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 next.valSet="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" next.size=4 next.IsProposer=false
+INFO [10-06|06:38:08.014] Commit new mining work                   number=4 sealhash="53677b…271cbd" uncles=0 txs=0 gas=0      fees=0 elapsed="101.362µs"
+INFO [10-06|06:38:08.015] QBFT: handle block proposal request      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state="Accept request"
+INFO [10-06|06:39:03.018] QBFT: handle PRE-PREPARE message         address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:39:03.018] QBFT: accepted PRE-PREPARE message       address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:39:03.018] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=4 prepares.count=0 quorum=3
+INFO [10-06|06:39:03.018] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=4 prepares.count=1 quorum=3
+INFO [10-06|06:39:03.018] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Preprepared      msg.code=19 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=4 prepares.count=2 quorum=3
+INFO [10-06|06:39:03.018] QBFT: received quorum of PREPARE messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Preprepared      msg.code=19 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=4 prepares.count=3 quorum=3
+INFO [10-06|06:39:03.018] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 old.state=Preprepared      new.state=Prepared
+INFO [10-06|06:39:03.018] QBFT: broadcast COMMIT message           address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=4 payload=0xf8abf8660480a072156da623b164612739daf259f78ef36a64f79f74f3992db356188ae7f2a66fb841f88d6c6a2758e921c72bd2ca6dbbb3fc9d8ce889398e3661b3479bc9149a15bb5e625c0c799552d9f1f0036cbe865f21737751623fed130b455c2f42f8407eef01b841d61fee3efbffb8a383e0e844fd90513c000b50934002448ab89517d7a6fd3c097e41e71bf1f5ec537a35ecee84b5c3afac9bb0f417e4d0543869735b6ed6a23801
+INFO [10-06|06:39:03.018] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Prepared         msg.code=20 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=4 commits.count=0 quorum=3
+INFO [10-06|06:39:03.019] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=4 commits.count=1 quorum=3
+INFO [10-06|06:39:03.019] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=4 commits.count=2 quorum=3
+INFO [10-06|06:39:03.019] QBFT: received quorum of COMMIT messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=4 commits.count=3 quorum=3
+INFO [10-06|06:39:03.019] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 old.state=Prepared         new.state=Committed
+INFO [10-06|06:39:03.019] BFT: block proposal committed            author=0x37C67d666B28165d6307F5445E95b7f444f5d237 hash="72156d…f2a66f" number=4
+INFO [10-06|06:39:03.019] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed="254.409µs" mgasps=0.000 number=4 hash="72156d…f2a66f" dirty=1.60KiB
+INFO [10-06|06:39:03.019] QBFT: handle final committed             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 state=Committed
+INFO [10-06|06:39:03.019] QBFT: initialize new round               address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=4 target.round=0 lastProposal.number=4 lastProposal.hash="72156d…f2a66f"
+INFO [10-06|06:39:03.020] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 old.state=Committed        new.state="Accept request"
+INFO [10-06|06:39:03.020] QBFT: start new round                    address=0x37C67d666B28165d6307F5445E95b7f444f5d237 old.round=0  old.sequence=4 old.state=Committed        old.proposer=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 next.round=0 next.seq=5 next.proposer=0x37C67d666B28165d6307F5445E95b7f444f5d237 next.valSet="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" next.size=4 next.IsProposer=true
+INFO [10-06|06:39:03.020] Commit new mining work                   number=5 sealhash="0cad08…830ced" uncles=0 txs=0 gas=0      fees=0 elapsed="90.145µs"
+INFO [10-06|06:39:03.020] QBFT: handle block proposal request      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state="Accept request"
+INFO [10-06|06:39:17.845] sent private signed tx                   data="606060…00002a" hash="7ded6e…1524e8" privatefrom= privatefor="[wsfcqtINO3linaBlh4Md19rMlwmXT7GDEuvnPjz9PiY=]" affectedCATxHashes=map[] merkleroot=map[] privacyflag=0 mandatoryrecipients=[]
+WARN [10-06|06:39:18.023] WARNING: The attribute config.maxCodeSizeConfig is deprecated and will be removed in the future, please use config.transitions.contractsizelimit on genesis file 
+INFO [10-06|06:39:18.023] QUORUM-CHECKPOINT                        name=TX-COMPLETED tx=0x6ebf2e7bddac49b76722744a1c47916e756e478024e09edfb68f8b60ca38e5cf time="371.622µs"
+INFO [10-06|06:39:18.024] Commit new mining work                   number=5 sealhash="6f5011…7e1a38" uncles=0 txs=1 gas=0      fees=0 elapsed=1.281ms
+INFO [10-06|06:39:18.024] QBFT: handle block proposal request      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state="Accept request"
+INFO [10-06|06:39:18.025] QBFT: broadcast PRE-PREPARE message      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state="Accept request" msg.code=18 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=5 block.number=5 block.hash=0x6f5011ef4adc4af4c76b28b690fab916bea50acea864d9e521efcdad887e1a38 payload=0xf90358f90352f9030c0580f90307f90272a072156da623b164612739daf259f78ef36a64f79f74f3992db356188ae7f2a66fa01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d493479437c67d666b28165d6307f5445e95b7f444f5d237a024cda68ad9634f293cee8fd9ffec5eeda0e8f2ca36728833adacc46d57b8a917a08eb637dabf5a37c4852faa2089fbfe4311ebf59f62c55c84a5a06241e943f546a0b64408da6b8fe39ab764af88ece1e8cca1c35fd988db57806e99138c629365a0b901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001058429b927008084633e7816b87cf87aa0d983010a02846765746889676f312e31362e3135856c696e7578000000000000f8549437c67d666b28165d6307f5445e95b7f444f5d2379490cc2f9298b0da38f90fc67f82e14b701cce749794a23f59698a77216b81c5a64e92f5be920eb0178b94d8c7ab6f715c1085460a1dfac2c030ca34ab7319c080c0a063746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365880000000000000000f88ff88d80808347b7608080b8407ded6e7f003d50a39270ade763329afa83b33b6ea673d852fc96d042320b44e661063ae7629d4e999367f7c3a598cf93d27dcdce4036018acccea69a8c1524e826a079f95e8ab033225ccfe47b4d5b34f7b800eb8471cbf6c68a1e56711d769c0dfaa0082ef65fd6bc8d567b23f99685bcb820673b8e1aa06cea126f78f570568e7d07c0b841b013b655488266d7b0b412ed9d154c82b63392c0aa9485a6ba4883363c071e60651adca53dc86886f8274e4a5eb8a6a958bb3e8a36672ddb1c0519ba0a57da6d01c2c0c0
+INFO [10-06|06:39:18.026] QBFT: handle PRE-PREPARE message         address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:39:18.027] QBFT: accepted PRE-PREPARE message       address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:39:18.028] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=5 prepares.count=0 quorum=3
+INFO [10-06|06:39:18.030] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Preprepared      msg.code=19 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=5 prepares.count=1 quorum=3
+INFO [10-06|06:39:18.031] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=5 prepares.count=2 quorum=3
+INFO [10-06|06:39:18.031] QBFT: received quorum of PREPARE messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=5 prepares.count=3 quorum=3
+INFO [10-06|06:39:18.031] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 old.state=Preprepared      new.state=Prepared
+INFO [10-06|06:39:18.032] QBFT: broadcast COMMIT message           address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=5 payload=0xf8abf8660580a06f5011ef4adc4af4c76b28b690fab916bea50acea864d9e521efcdad887e1a38b84194a8de8b733d3aa9a8b504429c49177b0506091020ebf1ca0d852b632b78879f59ba4059515fe7cc5af3367f12db0471657bff6a0d09afd106e2df30d911734801b8415ff10460b431c7d59315c9da16cd8a8fed42e30643e26a4057c315358cfec53237c344966a26f7036f5b429e60848f190d2751f55344673facabb8b3fa8b359400
+INFO [10-06|06:39:18.033] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Prepared         msg.code=20 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=5 commits.count=0 quorum=3
+INFO [10-06|06:39:18.034] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Prepared         msg.code=20 msg.source=0xa23f59698a77216B81C5a64e92F5bE920eB0178b msg.round=0 msg.sequence=5 commits.count=1 quorum=3
+INFO [10-06|06:39:18.034] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=5 commits.count=2 quorum=3
+INFO [10-06|06:39:18.034] QBFT: received quorum of COMMIT messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=5 commits.count=3 quorum=3
+INFO [10-06|06:39:18.034] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 old.state=Prepared         new.state=Committed
+INFO [10-06|06:39:18.034] BFT: block proposal committed            author=0x37C67d666B28165d6307F5445E95b7f444f5d237 hash="6f5011…7e1a38" number=5
+INFO [10-06|06:39:18.034] Successfully sealed new block            number=5 sealhash="6f5011…7e1a38" hash="6f5011…7e1a38" elapsed=10.212ms
+INFO [10-06|06:39:18.034] 🔨 mined potential block                  number=5 hash="6f5011…7e1a38"
+INFO [10-06|06:39:18.034] QBFT: handle final committed             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 state=Committed
+INFO [10-06|06:39:18.034] QBFT: initialize new round               address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=5 target.round=0 lastProposal.number=5 lastProposal.hash="6f5011…7e1a38"
+INFO [10-06|06:39:18.034] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 old.state=Committed        new.state="Accept request"
+INFO [10-06|06:39:18.034] Commit new mining work                   number=6 sealhash="a9b4f3…b99f74" uncles=0 txs=0 gas=0      fees=0 elapsed="132.473µs"
+INFO [10-06|06:39:18.034] QBFT: start new round                    address=0x37C67d666B28165d6307F5445E95b7f444f5d237 old.round=0  old.sequence=5 old.state=Committed        old.proposer=0x37C67d666B28165d6307F5445E95b7f444f5d237 next.round=0 next.seq=6 next.proposer=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 next.valSet="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" next.size=4 next.IsProposer=false
+INFO [10-06|06:40:18.003] QBFT: handle PRE-PREPARE message         address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:40:18.003] QBFT: accepted PRE-PREPARE message       address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:40:18.003] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 old.state="Accept request" new.state=Preprepared
+INFO [10-06|06:40:18.004] QBFT: broadcast PREPARE message          address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=6 payload=0xf867e30680a0e7eede11209c5b32d4982019102d2d86620b54c1d355f6df2ad9faa9be8d2f2cb8418ee235bba10fa502b9773935aef081d0f075c5f1b6cd9f9a0424691839f2e3ef4ef8b94ceace90351a4510cb549c57ffef32f9e7fdc7dd9b983f7d16d9c68c1601
+INFO [10-06|06:40:18.005] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Preprepared      msg.code=19 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=6 prepares.count=0 quorum=3
+INFO [10-06|06:40:18.006] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Preprepared      msg.code=19 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=6 prepares.count=1 quorum=3
+INFO [10-06|06:40:18.006] QBFT: handle PREPARE message             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=6 prepares.count=2 quorum=3
+INFO [10-06|06:40:18.006] QBFT: received quorum of PREPARE messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Preprepared      msg.code=19 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=6 prepares.count=3 quorum=3
+INFO [10-06|06:40:18.006] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 old.state=Preprepared      new.state=Prepared
+INFO [10-06|06:40:18.007] QBFT: broadcast COMMIT message           address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=6 payload=0xf8abf8660680a0e7eede11209c5b32d4982019102d2d86620b54c1d355f6df2ad9faa9be8d2f2cb84183a2dfc0da0d14c54e295f15c9e2ca470ef1a6989f6ba1a6c74241d383f3221b27f8b5f04cb748eaff59de09652e4949c5d862f3ae07404184d940767a30f6aa00b841d80f5776cc93f624a6e8356befcbbe608256bdd034c62214324e661c0010b7fb1965f65d66e363c437915a909b2edb16ce3d68fa0ad10aabe269b2320405f01b01
+INFO [10-06|06:40:18.008] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Prepared         msg.code=20 msg.source=0x37C67d666B28165d6307F5445E95b7f444f5d237 msg.round=0 msg.sequence=6 commits.count=0 quorum=3
+INFO [10-06|06:40:18.008] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Prepared         msg.code=20 msg.source=0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319 msg.round=0 msg.sequence=6 commits.count=1 quorum=3
+INFO [10-06|06:40:18.009] QBFT: handle COMMIT message              address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Prepared         msg.code=20 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=6 commits.count=2 quorum=3
+INFO [10-06|06:40:18.009] QBFT: received quorum of COMMIT messages address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Prepared         msg.code=20 msg.source=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 msg.round=0 msg.sequence=6 commits.count=3 quorum=3
+INFO [10-06|06:40:18.009] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 old.state=Prepared         new.state=Committed
+INFO [10-06|06:40:18.009] BFT: block proposal committed            author=0x37C67d666B28165d6307F5445E95b7f444f5d237 hash="e7eede…8d2f2c" number=6
+INFO [10-06|06:40:18.012] QBFT: handle final committed             address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 state=Committed
+INFO [10-06|06:40:18.012] QBFT: initialize new round               address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=6 target.round=0 lastProposal.number=6 lastProposal.hash="e7eede…8d2f2c"
+INFO [10-06|06:40:18.012] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=7 old.state=Committed        new.state="Accept request"
+INFO [10-06|06:40:18.012] QBFT: start new round                    address=0x37C67d666B28165d6307F5445E95b7f444f5d237 old.round=0  old.sequence=6 old.state=Committed        old.proposer=0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 next.round=0 next.seq=7 next.proposer=0xa23f59698a77216B81C5a64e92F5bE920eB0178b next.valSet="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" next.size=4 next.IsProposer=false
+INFO [10-06|06:40:18.012] Commit new mining work                   number=7 sealhash="e2e458…fc5b54" uncles=0 txs=0 gas=0      fees=0 elapsed="153.941µs"
+INFO [10-06|06:40:18.012] QBFT: handle block proposal request      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=7 state="Accept request"
+INFO [10-06|06:40:45.132] Got interrupt, shutting down... 
+INFO [10-06|06:40:45.134] HTTP server stopped                      endpoint=[::]:8545
+INFO [10-06|06:40:45.136] HTTP server stopped                      endpoint=[::]:8546
+INFO [10-06|06:40:45.136] IPC endpoint closed                      url=/live/node1-geth.ipc
+INFO [10-06|06:40:45.136] Stopping all plugins                     count=0
+INFO [10-06|06:40:45.136] All plugins stopped                      errors=[]
+INFO [10-06|06:40:45.136] extension service: stopping 
+INFO [10-06|06:40:45.136] extension service: stopped 
+INFO [10-06|06:40:45.137] Ethereum protocol stopped 
+INFO [10-06|06:40:45.137] Transaction pool stopped 
+INFO [10-06|06:40:45.137] BFT: deactivate 
+INFO [10-06|06:40:45.137] QBFT: stopping...                        address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:40:45.137] QBFT: stopped                            address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+INFO [10-06|06:40:45.137] Writing cached state to disk             block=6 hash="e7eede…8d2f2c" root="24cda6…b8a917"
+INFO [10-06|06:40:45.138] Persisted trie from memory database      nodes=7 size=967.00B time="335.703µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=4 livesize=330.00B
+INFO [10-06|06:40:45.138] Writing cached state to disk             block=5 hash="6f5011…7e1a38" root="24cda6…b8a917"
+INFO [10-06|06:40:45.138] Persisted trie from memory database      nodes=0 size=0.00B   time="7.831µs"   gcnodes=0 gcsize=0.00B gctime=0s livenodes=4 livesize=330.00B
+INFO [10-06|06:40:45.138] Writing snapshot state to disk           root="5833f2…29dde1"
+INFO [10-06|06:40:45.138] Persisted trie from memory database      nodes=0 size=0.00B   time="4.46µs"    gcnodes=0 gcsize=0.00B gctime=0s livenodes=4 livesize=330.00B
+INFO [10-06|06:40:45.138] Writing clean trie cache to disk         path=/data/geth/triecache threads=24
+INFO [10-06|06:40:45.139] Looking for peers                        peercount=2 tried=0 static=4
+INFO [10-06|06:40:45.144] Persisted the clean trie cache           path=/data/geth/triecache elapsed=5.096ms

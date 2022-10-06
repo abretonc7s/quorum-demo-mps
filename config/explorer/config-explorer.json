@@ -1,0 +1,34 @@
+{
+    "algorithm": "qbft",
+    "nodes": [
+      {
+        "name": "node1",
+        "client": "goquorum",
+        "rpcUrl": "http://node1:8545",
+        "privateTxUrl": "http://127.0.0.1:9081",
+        "privateKey": "0xf73145d0da0cb30d62bc4f0cb8cb4edc3e623c9356cab337bd9b43aa1d3d4ee0",
+        "accountAddress": "0x058d1ec11f8776a23724663d556298c91eab041a"
+      },
+      {
+        "name": "node2",
+        "client": "goquorum",
+        "rpcUrl": "http://node2:8545",
+        "privateTxUrl": "http://127.0.0.1:9083",
+        "privateKey": "0xee199322af487b2c3a34a5f31b728e9e7fbad721bf1be03114156f07df00ed10",
+        "accountAddress": "0xa019ed8c500862bb4e1aeee5cc38e59c36850aba"
+      },
+      {
+        "name": "node3",
+        "client": "goquorum",
+        "rpcUrl": "http://node3:8545",
+        "privateTxUrl": ""
+      },
+      {
+        "name": "node4",
+        "client": "goquorum",
+        "rpcUrl": "http://node4:8545",
+        "privateTxUrl": ""
+      }
+    ]
+  }
+  

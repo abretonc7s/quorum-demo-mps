@@ -7,8 +7,11 @@ set -o pipefail
 GOQUORUM_CONS_ALGO=`echo "${GOQUORUM_CONS_ALGO:-qbft}" | tr '[:lower:]'`
 GENESIS_FILE=${GENESIS_FILE:-"/data/${GOQUORUM_CONS_ALGO}-${GOQUORUM_GENESIS_MODE}-genesis.json"}
 
+rm -rf /data/geth
+
 cp -R /config/* /data
 mkdir -p /data/keystore/
+mkdir -p /data/plugins/
 
 echo "Applying ${GENESIS_FILE} ..."
 geth --nousb --verbosity 1 --datadir=/data init ${GENESIS_FILE}; 
@@ -74,7 +77,7 @@ $CONSENSUS_ARGS \
 --http --http.addr 0.0.0.0 --http.port 8545 --http.corsdomain "*" --http.vhosts "*" --http.api admin,eth,debug,miner,net,txpool,personal,web3,$QUORUM_API \
 --ws --ws.addr 0.0.0.0 --ws.port 8546 --ws.origins "*" --ws.api admin,eth,debug,miner,net,txpool,personal,web3,$QUORUM_API \
 --port 30303 \
---identity ${HOSTNAME}-${GOQUORUM_CONS_ALGO} \
+--identity ${HOSTNAME} \
 --unlock ${ADDRESS} \
 --allow-insecure-unlock \
 --password /data/passwords.txt \
