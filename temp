@@ -1,0 +1,46 @@
+# run with node private-trx.js $bearer    
+DEBUG[10-08|02:14:49.012] Checking PSI access                      passed=true  granted="psi://PSA?self.eoa=0x50B09EC167697863f5f8FBc124022D8C893b73C5" ask=PSA
+DEBUG[10-08|02:14:49.022] Served eth_chainId                       conn=192.168.176.1:43590 reqid=533900658438255  t="54.026µs"
+DEBUG[10-08|02:14:49.022] Checking PSI access                      passed=false granted=rpc://eth_*                           ask=PSA
+DEBUG[10-08|02:14:49.022] Checking PSI access                      passed=false granted=rpc://quorumExtension_*               ask=PSA
+DEBUG[10-08|02:14:49.029] Checking PSI access                      passed=false granted=rpc://quorumExtension_*               ask=PSA
+DEBUG[10-08|02:14:49.029] Checking PSI access                      passed=false granted=rpc://rpc_modules                     ask=PSA
+
+
+DEBUG[10-08|02:15:23.541] [DEBUG] authentication took 114µs        provider=security plugin=quorum-security-plugin-enterprise version=0.1.2 from=plugin
+DEBUG[10-08|02:15:23.541] Checking PSI access                      passed=false granted=rpc://eth_*                           ask=PSA
+DEBUG[10-08|02:15:23.541] Checking PSI access                      passed=false granted=rpc://rpc_modules                     ask=PSA
+
+DEBUG[10-08|02:15:23.541] Checking PSI access                      passed=true  granted="psi://PSA?self.eoa=0x50B09EC167697863f5f8FBc124022D8C893b73C5" ask=PSA
+DEBUG[10-08|02:15:23.541] Determined authorized PSI                psi=PSA
+DEBUG[10-08|02:15:23.541] Enrich call context with values from security context conn=192.168.176.1:57476
+DEBUG[10-08|02:15:23.545] Checking PSI access                      passed=false granted=rpc://quorumExtension_*               ask=PSA
+DEBUG[10-08|02:15:23.545] Checking PSI access                      passed=false granted=rpc://rpc_modules                     ask=PSA
+DEBUG[10-08|02:15:23.548] Checking PSI access                      passed=true  granted="psi://PSA?self.eoa=0x50B09EC167697863f5f8FBc124022D8C893b73C5" ask=PSA
+DEBUG[10-08|02:15:23.556] Checking PSI access                      passed=false granted=rpc://quorumExtension_*               ask=PSA
+DEBUG[10-08|02:15:23.556] Checking PSI access                      passed=false granted=rpc://rpc_modules                     ask=PSA
+INFO [10-08|02:15:23.563] Submitted transaction                    hash=0x6b145fb1a5081ecdbf103f2d35dc9a50216b5ba572590bafc32f24cb896f1586 from=0x339A6E3a8D47882c5be9B0e901360649600d1868 nonce=2 recipient=0x50B09EC167697863f5f8FBc124022D8C893b73C5 value=10000000000000000000
+DEBUG[10-08|02:15:23.565] Checking PSI access                      passed=false granted=rpc://quorumExtension_*               ask=PSA
+DEBUG[10-08|02:15:23.565] Checking PSI access                      passed=false granted=rpc://rpc_modules                     ask=PSA
+DEBUG[10-08|02:15:23.565] Checking PSI access                      passed=true  granted="psi://PSA?self.eoa=0x50B09EC167697863f5f8FBc124022D8C893b73C5" ask=PSA
+DEBUG[10-08|02:15:24.577] Enrich call context with values from security context conn=192.168.176.1:57612
+TRACE[10-08|02:15:25.139] BFT: loaded voting snapshot from cache   snap.number=22 snap.hash=0x21f0c9e46b8f0d7fc6ad0d3536a5aff4860af857348126a5dd0820057eeb64cc snap.epoch=30000 snap.validators="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" snap.votes=[]
+DEBUG[10-08|02:15:25.139] Account Extra Data root                  hash="000000…000000"
+INFO [10-08|02:15:25.148] QBFT: accepted PRE-PREPARE message       address=0x37C67d666B28165d6307F5445E95b7f444f5d237
+TRACE[10-08|02:15:25.148] QBFT: start new ROUND-CHANGE timer       address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=23 state="Accept request" timeout=10.000
+INFO [10-08|02:15:25.148] QBFT: changed state                      address=0x37C67d666B28165d6307F5445E95b7f444f5d237 current.round=0 current.sequence=23 old.state="Accept request" new.state=Preprepared
+
+
+DEBUG[10-08|02:17:27.038] Checking PSI access                      passed=true  granted="psi://PSA?self.eoa=0x50B09EC167697863f5f8FBc124022D8C893b73C5" ask=PSA
+DEBUG[10-08|02:17:27.038] Determined authorized PSI                psi=PSA
+DEBUG[10-08|02:17:27.038] Enrich call context with values from security context conn=192.168.176.1:47440
+DEBUG[10-08|02:17:27.039] Checking PSI access                      passed=false granted=rpc://rpc_modules                     ask=PSA
+DEBUG[10-08|02:17:27.039] Checking PSI access                      passed=true  granted="psi://PSA?self.eoa=0x50B09EC167697863f5f8FBc124022D8C893b73C5" ask=PSA
+DEBUG[10-08|02:17:27.039] Determined authorized PSI                psi=PSA
+DEBUG[10-08|02:17:27.039] Checking PSI access                      passed=false granted=rpc://eth_*                           ask=PSA
+DEBUG[10-08|02:17:27.039] Checking PSI access                      passed=false granted=rpc://rpc_modules                     ask=PSA
+DEBUG[10-08|02:17:27.046] Checking PSI access                      passed=true  granted="psi://PSA?self.eoa=0x50B09EC167697863f5f8FBc124022D8C893b73C5" ask=PSA
+DEBUG[10-08|02:17:28.055] [DEBUG] authentication took 86µs         provider=security plugin=quorum-security-plugin-enterprise version=0.1.2 from=plugin
+TRACE[10-08|02:17:29.022] BFT: loaded voting snapshot from cache   snap.number=25 snap.hash=0xf02bfe2a2638fda2dc75120858b3c419338a598d6e6f328f9df21f35a2e9f0f5 snap.epoch=30000 snap.validators="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" snap.votes=[]
+DEBUG[10-08|02:17:29.022] Account Extra Data root                  hash="000000…000000"
+TRACE[10-08|02:17:29.022] BFT: loaded voting snapshot from cache   snap.number=25 snap.hash=0xf02bfe2a2638fda2dc75120858b3c419338a598d6e6f328f9df21f35a2e9f0f5 snap.epoch=30000 snap.validators="[0x37C67d666B28165d6307F5445E95b7f444f5d237 0x90Cc2f9298b0DA38f90FC67F82E14B701CcE7497 0xa23f59698a77216B81C5a64e92F5bE920eB0178b 0xD8C7aB6f715c1085460a1dfAC2C030Ca34Ab7319]" snap.votes=[]

@@ -1,11 +1,12 @@
 #!/bin/bash
 
 bearers=$(./mt-generate-tokens.sh)
+#echo "bearers: $bearers"
 tokenA=$(echo $bearers | jq -r .A)
 tokenB=$(echo $bearers | jq -r .B)
 tokenC=$(echo $bearers | jq -r .C)
 
-n1_PSA=$(geth attach https://localhost:20000?PSI=PSA --rpcclitls.insecureskipverify --rpcclitoken "$tokenA" --exec eth.blockNumber)
+n1_PSA=$(geth attach "https://localhost:20000?PSI=PSA" --rpcclitls.insecureskipverify --rpcclitoken "$tokenA" --exec eth.blockNumber)
 n1_PSB=$(geth attach https://localhost:20000?PSI=PSB --rpcclitls.insecureskipverify --rpcclitoken "$tokenB"  --exec eth.blockNumber)
 n1_PSC=$(geth attach https://localhost:20000?PSI=PSC --rpcclitls.insecureskipverify --rpcclitoken "$tokenC" --exec eth.blockNumber)
 n2=$(geth attach http://localhost:20002 --exec eth.blockNumber)

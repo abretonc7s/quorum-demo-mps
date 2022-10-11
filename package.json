@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/abretonc7s/quorum-demo-mps.git",
+  "author": "<abreton@siteed.net>",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.7.1",
+    "httpheaderprovider": "^0.3.4",
+    "web3": "^1.8.0",
+    "web3js-quorum": "^22.4.0"
+  }
+}

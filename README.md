@@ -73,7 +73,7 @@ geth attach http://localhost:20002 --exec 'loadScript("live/acc-contract.js")'
 ```
 
 ```js
-var address = "0xdd79a0ef8250ebc98af4890745147a554990bfc6";
+var address = "0x7e8b672448670e49b924693d978263d405522444";
 var abi = [{"constant":true,"inputs":[],"name":"storedData","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"get","outputs":[{"name":"retVal","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"x","type":"uint256"}],"name":"inc","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[{"name":"initVal","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"value","type":"uint256"}],"name":"IncEvent","type":"event"}];
 var acc = eth.contract(abi).at(address)
 acc.IncEvent().watch( function (error, log) {
@@ -125,11 +125,14 @@ Scopes:
 ./mt-generate-tokens.sh
 
 export token=$(./mt-generate-tokens.sh | jq -r .A)
+docker exec -it node1 geth attach https://localhost:8545 --rpcclitls.insecureskipverify  --rpcclitoken "$token"
 
 # try the token with different private states
+## Able to access PSA
 curl -k -X POST https://localhost:20000?PSI=PSA -H "Content-type: application/json" \
          -H "Authorization: $token" \
        --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+## Not Authorized - Unable to access PSB
 curl -k -X POST https://localhost:20000?PSI=PSB -H "Content-type: application/json" \
          -H "Authorization: $token" \
        --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
@@ -137,6 +140,37 @@ curl -k -X POST https://localhost:20000?PSI=PSB -H "Content-type: application/js
 
 # Verify that we can use a bearer for each private state 
 ./status-mt.sh
+
+# Verify that limited scope permissions are working
+export token=$(./mt-generate-tokens.sh | jq -r .limited )
+geth attach https://localhost:20000?PSI=PSA --rpcclitls.insecureskipverify --rpcclitoken "$token" --exec eth.blockNumber
+geth attach https://localhost:20000?PSI=PSA --rpcclitls.insecureskipverify --rpcclitoken "$token" --exec "eth.getBalance(\"0x43f18d5acfaf81a866082b9c68a785154d56b16c\")"
+
+# Verify that self-managed accounts permissions are working
+# deploy accumulator contract 
+geth attach http://localhost:20002 --exec 'loadScript("live/acc-contract.js")' 
+./receipt.sh 0x7313748616a5e33547191a0ae07126c053de2c26aeb3a95b40e8aa25852ddd84
+# address 0x7e8b672448670e49b924693d978263d405522444
+
+# Check token 
+export bearer=$(./mt-generate-tokens.sh | jq -r .limited2 | awk '{print $2}')
+curl -X POST -d "token=$bearer" http://localhost:4445/oauth2/introspect
+
+# import wallets
+personal.importRawKey("87f8c55e037ddb6dbbe454c7500f7c3d4232892aa19405a47bc75786f0882ff9", "") 
+personal.unlockAccount("0x50b09ec167697863f5f8fbc124022d8c893b73c5", "", 1500)
+personal.importRawKey("ebcb6cddfbb2c5b6293de38a92a7dbe974888ce0061863d4e4784d6bdc3561c7", "") 
+personal.unlockAccount("0x1fE7E194edB898864FF7B6b09b91a93076FaAF4B", "", 1500)
+
+# Make sure the accounts are funded. 10eth each
+eth.sendTransaction({from: "0x339a6e3a8d47882c5be9b0e901360649600d1868", to: "0x50b09ec167697863f5f8fbc124022d8c893b73c5", value: "10000000000000000000"})
+eth.sendTransaction({from: "0x339a6e3a8d47882c5be9b0e901360649600d1868", to: "0x1fE7E194edB898864FF7B6b09b91a93076FaAF4B", value: "10000000000000000000"})
+
+
+node permissions.js node1 $bearer
+node permissions.js wallet1 $bearer
+node permissions.js wallet2 $bearer
+
 
 docker compose -f docker-compose-mt.yml down
 ```
