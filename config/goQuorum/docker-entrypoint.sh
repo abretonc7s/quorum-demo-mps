@@ -69,7 +69,7 @@ exec geth \
 --datadir /data \
 --nodiscover \
 --permissioned \
---verbosity 3 \
+--verbosity 9 \
 $CONSENSUS_ARGS \
 --syncmode full --revertreason \
 --metrics --pprof --pprof.addr 0.0.0.0 --pprof.port 9545 \
