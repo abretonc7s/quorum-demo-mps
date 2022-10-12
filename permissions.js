@@ -66,7 +66,7 @@ const web3 = new Web3Quorum(new Web3(provider));
 const transact = async ({ account }) => {
     const abi = [{ "constant": true, "inputs": [], "name": "storedData", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "get", "outputs": [{ "name": "retVal", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "x", "type": "uint256" }], "name": "inc", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "name": "initVal", "type": "uint256" }], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "value", "type": "uint256" }], "name": "IncEvent", "type": "event" }];
 
-    const contractAddress = "0x7e8b672448670e49b924693d978263d405522444";
+    const contractAddress = "0xdd79a0ef8250ebc98af4890745147a554990bfc6";
     const simpleContract = new web3.eth.Contract(abi, contractAddress);
     const tm2 = "wsfcqtINO3linaBlh4Md19rMlwmXT7GDEuvnPjz9PiY=";
 
